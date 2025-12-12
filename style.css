@@ -1,0 +1,286 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #222;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-icon {
+    width: 35px;
+    display: none;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+#hero {
+    background: url('file:///C:/Users/LENOVO/Downloads/%E2%80%94Pngtree%E2%80%94vintage%20ethnic%20indonesian%20batik%20with_1130956.png') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.hero-text {
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* CARD */
+.container {
+    padding: 40px 20px;
+}
+
+.card {
+    background: white;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card p {
+    margin: 15px;
+}
+
+.btn {
+    margin: 15px;
+    padding: 10px 20px;
+    background: #e3a11a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #c28615;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .navbar ul {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 180px;
+        height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        transition: 0.4s;
+    }
+    .navbar ul li {
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+.more-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease; /* animasi slide */
+}
+
+.more-text.show {
+    max-height: 500px; /* cukup besar agar teks muat */
+}
+/* CARD MODERN */
+.card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin: 20px auto;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 700px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #222;
+}
+
+.card-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* TOMBOL */
+.btn {
+    padding: 10px 20px;
+    background: #e3a11a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #c28615;
+}
+
+/* TEKS TAMBAHAN FADE + SLIDE */
+.more-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.more-text.show {
+    max-height: 500px; /* cukup untuk teks */
+    opacity: 1;
+}
+/* CARD MODERN */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    margin: 20px auto;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    max-width: 700px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #222;
+}
+
+.card-content p {
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* TOMBOL */
+.btn {
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.8);
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: rgba(255,255,255,1);
+}
+
+/* TEKS TAMBAHAN FADE + SLIDE */
+.more-text {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.more-text.show {
+    max-height: 500px;
+    opacity: 1;
+}
+
+/* WARNA CARD SESUAI TEMA */
+.kasada-card {
+    background: linear-gradient(135deg, #FFB347, #FFCC33); /* kuning-oranye hangat */
+}
+
+.ngaben-card {
+    background: linear-gradient(135deg, #FF6B6B, #FF8787); /* merah lembut */
+}
+
+.toraja-card {
+    background: linear-gradient(135deg, #6A89CC, #82A3E3); /* biru lembut */
+}
